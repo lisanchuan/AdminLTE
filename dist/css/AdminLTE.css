@@ -254,7 +254,7 @@ a:focus {
   float: left;
   background-color: transparent;
   background-image: none;
-  padding: 15px 15px;
+  padding: 16.5px 15px;
   font-family: fontAwesome;
 }
 .main-header .sidebar-toggle:before {
@@ -366,7 +366,7 @@ a:focus {
   color: #fff;
   border: 0;
   margin: 0;
-  padding: 15px 15px;
+  padding: 16.5px 15px;
 }
 @media (max-width: 991px) {
   .navbar-custom-menu .navbar-nav > li {
@@ -1299,17 +1299,17 @@ a:focus {
 }
 /* support Font Awesome icons in form-control */
 .form-control-feedback.fa {
-  line-height: 34px;
+  line-height: 31px;
 }
 .input-lg + .form-control-feedback.fa,
 .input-group-lg + .form-control-feedback.fa,
 .form-group-lg .form-control + .form-control-feedback.fa {
-  line-height: 46px;
+  line-height: 42px;
 }
 .input-sm + .form-control-feedback.fa,
 .input-group-sm + .form-control-feedback.fa,
 .form-group-sm .form-control + .form-control-feedback.fa {
-  line-height: 30px;
+  line-height: 28px;
 }
 /*
  * Component: Progress Bar
@@ -3337,7 +3337,7 @@ table.text-center th {
  */
 .btn-social {
   position: relative;
-  padding-left: 44px;
+  padding-left: 41px;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
@@ -3348,45 +3348,45 @@ table.text-center th {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 32px;
-  line-height: 34px;
+  width: 29px;
+  line-height: 31px;
   font-size: 1.6em;
   text-align: center;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .btn-social.btn-lg {
-  padding-left: 61px;
+  padding-left: 57px;
 }
 .btn-social.btn-lg > :first-child {
-  line-height: 45px;
-  width: 45px;
+  line-height: 41px;
+  width: 41px;
   font-size: 1.8em;
 }
 .btn-social.btn-sm {
-  padding-left: 38px;
+  padding-left: 36px;
 }
 .btn-social.btn-sm > :first-child {
-  line-height: 28px;
-  width: 28px;
+  line-height: 26px;
+  width: 26px;
   font-size: 1.4em;
 }
 .btn-social.btn-xs {
-  padding-left: 30px;
+  padding-left: 29px;
 }
 .btn-social.btn-xs > :first-child {
-  line-height: 20px;
-  width: 20px;
+  line-height: 19px;
+  width: 19px;
   font-size: 1.2em;
 }
 .btn-social-icon {
   position: relative;
-  padding-left: 44px;
+  padding-left: 41px;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 34px;
-  width: 34px;
+  height: 31px;
+  width: 31px;
   padding: 0;
 }
 .btn-social-icon > :first-child {
@@ -3394,34 +3394,34 @@ table.text-center th {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 32px;
-  line-height: 34px;
+  width: 29px;
+  line-height: 31px;
   font-size: 1.6em;
   text-align: center;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .btn-social-icon.btn-lg {
-  padding-left: 61px;
+  padding-left: 57px;
 }
 .btn-social-icon.btn-lg > :first-child {
-  line-height: 45px;
-  width: 45px;
+  line-height: 41px;
+  width: 41px;
   font-size: 1.8em;
 }
 .btn-social-icon.btn-sm {
-  padding-left: 38px;
+  padding-left: 36px;
 }
 .btn-social-icon.btn-sm > :first-child {
-  line-height: 28px;
-  width: 28px;
+  line-height: 26px;
+  width: 26px;
   font-size: 1.4em;
 }
 .btn-social-icon.btn-xs {
-  padding-left: 30px;
+  padding-left: 29px;
 }
 .btn-social-icon.btn-xs > :first-child {
-  line-height: 20px;
-  width: 20px;
+  line-height: 19px;
+  width: 19px;
   font-size: 1.2em;
 }
 .btn-social-icon > :first-child {
@@ -3430,20 +3430,20 @@ table.text-center th {
   width: 100%;
 }
 .btn-social-icon.btn-lg {
-  height: 45px;
-  width: 45px;
+  height: 41px;
+  width: 41px;
   padding-left: 0;
   padding-right: 0;
 }
 .btn-social-icon.btn-sm {
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
   padding-left: 0;
   padding-right: 0;
 }
 .btn-social-icon.btn-xs {
-  height: 22px;
-  width: 22px;
+  height: 21px;
+  width: 21px;
   padding-left: 0;
   padding-right: 0;
 }
