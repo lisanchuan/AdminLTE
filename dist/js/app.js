@@ -36,64 +36,90 @@ $.AdminLTE.options = {
   //Add slimscroll to navbar menus
   //This requires you to load the slimscroll plugin
   //in every page before app.js
+  //添加一个细滚动条到 navbar menus
+  //这需要先加加载好slimscroll这个组件
+  //每个页面加载完成后载入app.js
   navbarMenuSlimscroll: true,
-  navbarMenuSlimscrollWidth: "3px", //The width of the scroll bar
+  navbarMenuSlimscrollWidth: "3px", //The width of the scroll bar  滚动条宽度
   navbarMenuHeight: "200px", //The height of the inner menu
-  //General animation speed for JS animated elements such as box collapse/expand and
+
+
   //sidebar treeview slide up/down. This options accepts an integer as milliseconds,
   //'fast', 'normal', or 'slow'
+  //元素动画中一般动画速度单位为毫秒
   animationSpeed: 500,
   //Sidebar push menu toggle button selector
+  //侧边栏状态切换按钮元素名
   sidebarToggleSelector: "[data-toggle='offcanvas']",
   //Activate sidebar push menu
+  //侧边栏状态切换按钮激活
   sidebarPushMenu: true,
   //Activate sidebar slimscroll if the fixed layout is set (requires SlimScroll Plugin)
+  //在固定布局(fixed)下激活自定义滚动条组件
   sidebarSlimScroll: true,
   //Enable sidebar expand on hover effect for sidebar mini
   //This option is forced to true if both the fixed layout and sidebar mini
   //are used together
-  sidebarExpandOnHover: false,
+  //在固定布局(fixed)侧边栏收缩状态下鼠标移入就展开
+  sidebarExpandOnHover: true,
   //BoxRefresh Plugin
+//盒子刷新
   enableBoxRefresh: true,
   //Bootstrap.js tooltip
+  //开启bootstrap下的toppltip插件
   enableBSToppltip: true,
+  //toppltip插件激活元素名
   BSTooltipSelector: "[data-toggle='tooltip']",
   //Enable Fast Click. Fastclick.js creates a more
   //native touch experience with touch devices. If you
   //choose to enable the plugin, make sure you load the script
   //before AdminLTE's app.js
-  enableFastclick: true,
+
+//开启Fastclick（这个是用在移动端用来消除点击后300毫秒延时问题的插件），不是移动端使用没必要开启
+  enableFastclick: false,
   //Control Sidebar Options
+  //右侧边工具栏开启
   enableControlSidebar: true,
+
   controlSidebarOptions: {
     //Which button should trigger the open/close event
+    //开启右侧边工具栏按钮元素名
     toggleBtnSelector: "[data-toggle='control-sidebar']",
     //The sidebar selector
+    //右侧边工具栏元素名
     selector: ".control-sidebar",
     //Enable slide over content
+    //内容切换幻灯片效果
     slide: true
   },
   //Box Widget Plugin. Enable this plugin
   //to allow boxes to be collapsed and/or removed
+  //box插件开启  开启后才可以展示打开和关闭等效果动画
   enableBoxWidget: true,
   //Box Widget plugin options
   boxWidgetOptions: {
     boxWidgetIcons: {
       //Collapse icon
+      //最小化按钮图标
       collapse: 'fa-minus',
       //Open icon
+      //展开按钮图标
       open: 'fa-plus',
       //Remove icon
+      //关闭按钮图标
       remove: 'fa-times'
     },
     boxWidgetSelectors: {
       //Remove button selector
+      //关闭按钮
       remove: '[data-widget="remove"]',
       //Collapse button selector
+    // 展开按钮
       collapse: '[data-widget="collapse"]'
     }
   },
   //Direct Chat plugin options
+  //聊天框插件
   directChat: {
     //Enable direct chat by default
     enable: true,
