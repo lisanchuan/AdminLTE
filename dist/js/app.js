@@ -43,7 +43,6 @@ $.AdminLTE.options = {
   navbarMenuSlimscrollWidth: "3px", //The width of the scroll bar  滚动条宽度
   navbarMenuHeight: "200px", //The height of the inner menu
 
-
   //sidebar treeview slide up/down. This options accepts an integer as milliseconds,
   //'fast', 'normal', or 'slow'
   //元素动画中一般动画速度单位为毫秒
