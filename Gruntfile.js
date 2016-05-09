@@ -134,6 +134,29 @@ module.exports = function (grunt) {
       },
       files: ['pages/**/*.html', '*.html']
     },
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src : [
+            'hiklyui/css/*.css',
+            'hiklyui/pages/*.html',
+            'hiklyui/*.html'
+          ]
+        },
+
+        options: {
+          browser: "google chrome",
+          watchTask: true,
+          proxy: {
+            target: "http://localhost:63342/AdminLTE/hiklyui/index.html",
+            middleware: function (req, res, next) {
+              console.log(req.url);
+              next();
+            }
+          }
+        }
+      }
+    },
 
     // Delete images in build directory
     // After compressing the images in the build/img dir, there is no need
@@ -164,9 +187,11 @@ module.exports = function (grunt) {
   // Lint Bootstrap
   grunt.loadNpmTasks('grunt-bootlint');
 
+  grunt.loadNpmTasks('grunt-browser-sync');
+
   // Linting task
   grunt.registerTask('lint', ['jshint', 'csslint', 'bootlint']);
 
   // The default task (running "grunt" in console) is "watch"
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['browserSync','watch']);
 };
