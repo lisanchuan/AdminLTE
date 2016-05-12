@@ -6,7 +6,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     watch: {
       // If any .less file changes in directory "build/less/" run the "less"-task.
-      files: ["build/less/*.less","build/bootstrap-less/*.less", "build/less/skins/*.less", "dist/js/app.js"],
+      files: ["build/less/*.less","build/bootstrap-less/*.less", "build/less/skins/*.less", "dist/js/app.js",'hiklyui/less/*.less'],
       tasks: ["less", "uglify"]
     },
     // "less"-task configuration
@@ -34,6 +34,7 @@ module.exports = function (grunt) {
           "dist/css/skins/skin-green-light.css": "build/less/skins/skin-green-light.less",
           "dist/css/skins/skin-red-light.css": "build/less/skins/skin-red-light.less",
           "dist/css/skins/skin-purple-light.css": "build/less/skins/skin-purple-light.less",
+          "dist/css/skins/skin-hikly.css": "hiklyui/less/hikly.less",
           "dist/css/skins/_all-skins.css": "build/less/skins/_all-skins.less"
         }
       },
@@ -59,6 +60,7 @@ module.exports = function (grunt) {
           "dist/css/skins/skin-green-light.min.css": "build/less/skins/skin-green-light.less",
           "dist/css/skins/skin-red-light.min.css": "build/less/skins/skin-red-light.less",
           "dist/css/skins/skin-purple-light.min.css": "build/less/skins/skin-purple-light.less",
+          "dist/css/skins/skin-hikly.min.css": "hiklyui/less/hikly.less",
           "dist/css/skins/_all-skins.min.css": "build/less/skins/_all-skins.less"
         }
       }
@@ -139,6 +141,8 @@ module.exports = function (grunt) {
         bsFiles: {
           src : [
             'hiklyui/css/*.css',
+            'dist/css/*.css',
+            'dist/css/skins/*.css',
             'hiklyui/pages/*.html',
             'hiklyui/*.html'
           ]

@@ -1,3 +1,14 @@
-/**
- * Created by lisanchuan on 2016/5/9.
- */
+define(function (require, exports, module) {
+
+
+    var baseView = Backbone.View.extend({
+        initialize: function () {
+            this.render();
+            require("app");
+        },
+        render: function () {
+
+        }
+    });
+    module.exports = baseView;
+});
