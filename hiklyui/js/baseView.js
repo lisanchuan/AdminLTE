@@ -7,7 +7,7 @@ define(function (require, exports, module) {
             require("app");
         },
         render: function () {
-
+            
         }
     });
     module.exports = baseView;

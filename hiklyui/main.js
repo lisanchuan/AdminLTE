@@ -10,9 +10,10 @@
     });
     var Workspace = Backbone.Router.extend({
         routes: {
-            "button": "help",    // #help
+            "button": "help"    // #help
         },
         help: function (path) {
+            console.log(path);
             $(".content-wrapper").load("pages/" + path + ".html");
         }
     });
